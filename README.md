@@ -17,6 +17,17 @@ The following parameters are required to run the program
 #####     -negative_dataset The path to the file containing the negative datset. This file should contain one review per line
 #####     -validation_proportion The fraction of the datset to be considerd for validation. Should be < 1.0 Ex: 0.2
 #####     -log_file LOG_FILE The path to the file that will contain the log messages
+
+Run the code with the following parameters as follows.
+
+    python SentimentClassifierDemo.py 
+        -word2vec_model GoogleNews-vectors-negative300.bin.gz 
+        -positive_dataset positive_reviews.txt 
+        -negative_dataset negative_reviews.txt 
+        -validation_proportion 0.2 
+        -log_file SentimentClassifier_log.txt
+        
+The code will display the ROC curve for the classifier and also will print the accuracy of the classifier along with the recall and precision of the positive sentiment class.
     
 
 
