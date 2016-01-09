@@ -3,6 +3,7 @@
 ## This project shows how to design a simple sentiment analysis for movie reviews using trained vectors from Google word2vec model
 
 You can download the pre-trained Google word2vec vectors trained on Google news here - https://code.google.com/p/word2vec/
+The name of the file is  GoogleNews-vectors-negative300.bin.gz
 
 The required dataset is already present in this project
 
