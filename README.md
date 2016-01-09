@@ -9,7 +9,7 @@ The required dataset is already present in this project
 
 To know the list of parameters accepted by the program type
 
-    python SentimentClassifierDemo.py -h
+    python src/SentimentClassifierDemo.py -h
     
 The following parameters are required to run the program
 
