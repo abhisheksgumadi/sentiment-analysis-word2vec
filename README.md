@@ -28,6 +28,10 @@ Run the code with the following parameters as follows.
         -log_file SentimentClassifier_log.txt
         
 The code will display the ROC curve for the classifier and also will print the accuracy of the classifier along with the recall and precision of the positive sentiment class.
+
+The ROC curve should look something like this:
+
+![Alt text](roc.png "Optional title")
     
 
 
