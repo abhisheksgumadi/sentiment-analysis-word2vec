@@ -20,7 +20,7 @@ The following parameters are required to run the program
 
 Run the code with the following parameters as follows.
 
-    python SentimentClassifierDemo.py 
+    python src/SentimentClassifierDemo.py 
         -word2vec_model GoogleNews-vectors-negative300.bin.gz 
         -positive_dataset positive_reviews.txt 
         -negative_dataset negative_reviews.txt 
