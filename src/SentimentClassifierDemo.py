@@ -11,7 +11,7 @@ import logging
 import argparse
 from SentimentClassifier import SentimentClassifier
 
-from sklearn.metrics import roc_curve, auc, recall_score, precision_score
+from sklearn.metrics import roc_curve, auc, recall_score, precision_score, accuracy_score
 from sklearn.cross_validation import train_test_split
 
 
@@ -165,6 +165,10 @@ if __name__ == "__main__":
     precision = precision_score(y_test, pred_class)
     print "The precision score for the positive sentiment is %s percent" % str(precision*100.0)
     logger.info("Precision score is %s" % str(precision*100.0))
+    
+    accuracy = accuracy_score(y_test, pred_class)
+    print "The accruacy score of the classifier is %s percent" % str(accuracy*100.0)
+    logger.info("Accuracy score is %s" % str(accuracy*100.0))
     
     #generate a ROC curve and mention the area under curve to indicate the quality of the classifier
     logger.info("Generating the ROC curve")
