@@ -48,7 +48,7 @@ Run the code with the following parameters as follows:
 
     python src/Word2VecModelBuilder.py
         -word2vec_model data/MyWord2VecModel.word2vec
-        -corpus data/positive_reviews.txt
+        -corpus my_custom_data.txt
         -log_file Word2VecBuilder_log.txt
         
 The code will display the ROC curve for the classifier and also will print the accuracy of the classifier along with the recall and precision of the positive sentiment class.
