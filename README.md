@@ -55,7 +55,7 @@ The code will display the ROC curve for the classifier and also will print the a
 
 The ROC curve I got with custom corpus looked like this:
 
-![Alt text](roc.png "Roc Custom")
+![Alt text](roc_custom.png "Roc Custom")
 
 
     
