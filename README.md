@@ -32,7 +32,32 @@ The code will display the ROC curve for the classifier and also will print the a
 
 The ROC curve should look something like this:
 
-![Alt text](roc.png "Optional title")
+![Alt text](roc.png "ROC Google")
+
+If you want to build your own Word2Vec model rather than using the trained Google model, and then use that model for training the classifier, run the below file
+
+    python src/Word2VecBuilder.py -h
+    
+It accepts the below parameters
+
+#####     -word2vec_model  The path to the file that will contain the trained Word2Vec model
+#####     -corpus The path to the file containing the sentences, one sentence per line 
+#####     -log_file The path to the file containing log messages
+
+Run the code with the following parameters as follows:
+
+    python src/Word2VecModelBuilder.py
+        -word2vec_model data/MyWord2VecModel.word2vec
+        -corpus data/positive_reviews.txt
+        -log_file Word2VecBuilder_log.txt
+        
+The code will display the ROC curve for the classifier and also will print the accuracy of the classifier along with the recall and precision of the positive sentiment class.
+
+The ROC curve I got with custom corpus looked like this:
+
+![Alt text](roc.png "Roc Custom")
+
+
     
 
 
